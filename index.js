@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to app');
 });
 
-const uri = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASSWORD}@cluster0.yk7ln.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://airFlight:airFlight@cluster0.yk7ln.mongodb.net/airFlight?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
