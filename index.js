@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = 5000;
+const port = process.env.PORT || 80;
 
 app.get('/', (req, res) => {
   res.send('Welcome to app');
